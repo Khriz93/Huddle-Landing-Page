@@ -1,8 +1,95 @@
-    .attribution 
-    { 
-        font-size: 0.6875rem; text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body 
+{
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-color: rgb(103, 75, 176);
+}
+
+.huddle-logo 
+{
+    padding: 50px;
+    width: fit-content
+}
+
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.illustrations
+{
+    width: 100%;
+    display: block;
+}
+
+h1 
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    width: 500px;
+    color: white;
+}
+
+p 
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 630px;
+    color: white;
+}
+
+button 
+{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 22px;
+    color: hsl(257, 40%, 49%)
+}
+
+.social-icons-container 
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    margin-top: 70px;
+    padding: 0px 20px;
+}
+
+.fa-brands
+{
+    cursor: pointer;
+    font-size: 36px;
+    color: white;
+    padding: 0px 16px;
+}
+
+@media (max-width: 768px)
+{
+    body
+    {
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
-    .attribution a 
-    { 
-        color: hsl(228, 45%, 44%);
+    .content
+    {
+        flex-direction: column;
+        text-align: center;
     }
+
+}
