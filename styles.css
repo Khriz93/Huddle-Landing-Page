@@ -2,25 +2,30 @@
 
 body 
 {
+    margin: 0;
+    padding: 0;
+    /* min-height: 100vh; */
     background-image: url('images/bg-desktop.svg');
+    background-size: 80%;
     background-repeat: no-repeat;
     background-color: rgb(103, 75, 176);
 }
 
 .huddle-logo 
 {
-    padding: 50px;
-    width: fit-content
+    margin-left: 150px;
+    margin-top: 40px;
+    width: fit-content;
 }
 
 .content
 {
     display: flex;
-    justify-content: space-between;
+    max-width: 1440px;
     gap: 8rem;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 3rem;
+    margin: auto;
+    padding: 115px 0px;
+    justify-content: space-between;
 }
 
 .illustrations
@@ -63,20 +68,18 @@ button
 {
     display: flex;
     justify-content: flex-end;
-    height: 40px;
-    margin-top: 70px;
-    padding: 0px 20px;
+    padding-right: 20px;
 }
 
 .fa-brands
 {
     cursor: pointer;
-    font-size: 36px;
+    font-size: 38px;
     color: white;
     padding: 0px 16px;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1024px)
 {
     body
     {
